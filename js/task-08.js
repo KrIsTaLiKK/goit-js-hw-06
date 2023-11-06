@@ -9,7 +9,7 @@ function onFormSubmit(event) {
   const password = inputEl.password.value.trim();
 
   if (!email || !password) {
-    alert("Заповніть, будь-ласка усі поля");
+    alert("Заповніть, будь-ласка, усі поля!");
     return;
   }
 
@@ -29,7 +29,7 @@ function onFormSubmit(event) {
 //   } = event.currentTarget;
 
 //   if (!email.value || !password.value) {
-//     alert("Заповніть, будь-ласка усі поля");
+//     alert("Заповніть, будь-ласка, усі поля!");
 //     return;
 //   }
 //   const formData = { email: email.value, password: password.value };
