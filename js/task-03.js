@@ -17,7 +17,7 @@ const createImgEl = images
   .map(
     ({ url, alt }) =>
       `<li class = "gallery-item" >
-      <img src ="${url}" alt = "${alt}" width = "300" height = "300"></li>`
+      <img src ="${url}" alt = "${alt}" width = "400px" height = "100%"></li>`
   )
   .join("");
 

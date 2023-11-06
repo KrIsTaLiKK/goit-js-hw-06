@@ -32,7 +32,7 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
     let size = 30 + 10 * i;
     const bgColor = getRandomHexColor();
-    const boxElMarkup = `<div style = "width:${size}px; height:${size}px; background-color: ${bgColor}; margin-bottom:${10}px"></div>`;
+    const boxElMarkup = `<div style = "width:${size}px; height:${size}px; background-color: ${bgColor}; margin-top:${10}px"></div>`;
 
     boxesMarkup += boxElMarkup;
   }
