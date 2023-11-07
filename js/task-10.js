@@ -11,10 +11,10 @@ const refs = {
   elContainer: document.querySelector("#boxes"),
 };
 
-refs.btnCreateEl.addEventListener("click", createBoxes);
-refs.btnDestroyEl.addEventListener("click", destroyBoxes);
+refs.btnCreateEl.addEventListener("click", onCreateBoxes);
+refs.btnDestroyEl.addEventListener("click", onDestroyBoxes);
 
-function createBoxes() {
+function onCreateBoxes() {
   const amount = refs.input.value;
   let boxesMarkup = "";
   for (let i = 0; i < amount; i += 1) {
@@ -28,7 +28,7 @@ function createBoxes() {
   refs.elContainer.innerHTML = boxesMarkup;
 }
 
-function destroyBoxes() {
+function onDestroyBoxes() {
   refs.elContainer.innerHTML = "";
   refs.input.value = "";
 }
